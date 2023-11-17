@@ -4,34 +4,42 @@ it consist only of two functions , "h" that renders html , and "atom" which is a
 see the whole framework [file](https://github.com/babak-karimi-asl/tiny-frontend-framework/blob/main/tiny-frontend-framework.js) , it's only 60 lines of code.
 
 # usage example
-```js
+```html
+<!-- include the file-->
+<script src="./tiny-frontend-framework.js"/>
 
-let count = atom(0)
-
-document.body.append(
-    h({
-        tag: 'h1',
-        id: 'count-label',
-        textContent: count.get()
-    }),
-    h({
-        tag: 'button',
-        id: 'my-button',
-        on: {
-            click() {
-                count.update(v=>v+1)
-            }
-        },
-        css: 'hello',
-        style: 'color:red;',
-        textContent: 'increase',
+<!-- and use it-->
+<script>
+    let count = atom(0)
+    
+    document.body.append(
+        h({
+            tag: 'h1',
+            id: 'count-label',
+            textContent: count.get()
+        }),
+        h({
+            tag: 'button',
+            id: 'my-button',
+            on: {
+                click() {
+                    count.update(v=>v+1)
+                }
+            },
+            css: 'hello',
+            style: 'color:red;',
+            textContent: 'increase',
+        })
+    )
+    
+    count.watch(v=>{
+        h({
+            id: 'count-label',
+            textContent: v,
+        })
     })
-)
+</script>
 
-count.watch(v=>{
-    h({
-        id: 'count-label',
-        textContent: v,
-    })
-})
 ```
+# result
+video
