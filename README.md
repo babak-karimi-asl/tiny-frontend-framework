@@ -5,8 +5,12 @@ see the whole framework [file](https://github.com/babak-karimi-asl/tiny-frontend
 
 # usage example
 ```html
+<!DOCTYPE html> <html lang="en"> <head>
+
 <!-- include the file-->
-<script src="./tiny-frontend-framework.js"/>
+<script src="./tiny-frontend-framework.js"></script>
+
+</head><body>
 
 <!-- and use it-->
 <script>
@@ -40,6 +44,7 @@ see the whole framework [file](https://github.com/babak-karimi-asl/tiny-frontend
     })
 </script>
 
+</body></html>
 ```
 # result
 video
