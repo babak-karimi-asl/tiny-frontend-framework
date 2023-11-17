@@ -43,3 +43,4 @@ see the whole framework [file](https://github.com/babak-karimi-asl/tiny-frontend
 ```
 # result
 video
+[tiny-frontend-framework.webm](https://github.com/babak-karimi-asl/tiny-frontend-framework/assets/31150843/88b5157d-cfce-4f37-8442-24c70e8bcbc3)
